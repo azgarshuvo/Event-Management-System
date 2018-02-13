@@ -1,0 +1,13 @@
+F:\Assignment\WeddingManagementSystem\SetSecurityQuestion\bin\Debug\SetSecurityQuestion.exe.config
+F:\Assignment\WeddingManagementSystem\SetSecurityQuestion\bin\Debug\SetSecurityQuestion.exe
+F:\Assignment\WeddingManagementSystem\SetSecurityQuestion\bin\Debug\SetSecurityQuestion.pdb
+F:\Assignment\WeddingManagementSystem\SetSecurityQuestion\obj\Debug\SetSecurityQuestion.csprojResolveAssemblyReference.cache
+F:\Assignment\WeddingManagementSystem\SetSecurityQuestion\obj\Debug\MainWindow.baml
+F:\Assignment\WeddingManagementSystem\SetSecurityQuestion\obj\Debug\MainWindow.g.cs
+F:\Assignment\WeddingManagementSystem\SetSecurityQuestion\obj\Debug\App.g.cs
+F:\Assignment\WeddingManagementSystem\SetSecurityQuestion\obj\Debug\SetSecurityQuestion_MarkupCompile.cache
+F:\Assignment\WeddingManagementSystem\SetSecurityQuestion\obj\Debug\SetSecurityQuestion.g.resources
+F:\Assignment\WeddingManagementSystem\SetSecurityQuestion\obj\Debug\SetSecurityQuestion.Properties.Resources.resources
+F:\Assignment\WeddingManagementSystem\SetSecurityQuestion\obj\Debug\SetSecurityQuestion.csproj.GenerateResource.Cache
+F:\Assignment\WeddingManagementSystem\SetSecurityQuestion\obj\Debug\SetSecurityQuestion.exe
+F:\Assignment\WeddingManagementSystem\SetSecurityQuestion\obj\Debug\SetSecurityQuestion.pdb

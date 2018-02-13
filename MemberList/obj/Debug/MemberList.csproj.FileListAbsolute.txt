@@ -1,0 +1,6 @@
+C:\Users\Tanmoy\Desktop\WeddingManagementSystem\MemberList\bin\Debug\MemberList.dll.config
+C:\Users\Tanmoy\Desktop\WeddingManagementSystem\MemberList\bin\Debug\MemberList.dll
+C:\Users\Tanmoy\Desktop\WeddingManagementSystem\MemberList\bin\Debug\MemberList.pdb
+C:\Users\Tanmoy\Desktop\WeddingManagementSystem\MemberList\obj\Debug\MemberList.csprojResolveAssemblyReference.cache
+C:\Users\Tanmoy\Desktop\WeddingManagementSystem\MemberList\obj\Debug\MemberList.dll
+C:\Users\Tanmoy\Desktop\WeddingManagementSystem\MemberList\obj\Debug\MemberList.pdb

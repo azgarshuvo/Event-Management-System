@@ -1,0 +1,6 @@
+C:\Users\Tanmoy\Desktop\WeddingManagementSystem\DecorationList\bin\Debug\DecorationList.dll.config
+C:\Users\Tanmoy\Desktop\WeddingManagementSystem\DecorationList\bin\Debug\DecorationList.dll
+C:\Users\Tanmoy\Desktop\WeddingManagementSystem\DecorationList\bin\Debug\DecorationList.pdb
+C:\Users\Tanmoy\Desktop\WeddingManagementSystem\DecorationList\obj\Debug\Decoration.csprojResolveAssemblyReference.cache
+C:\Users\Tanmoy\Desktop\WeddingManagementSystem\DecorationList\obj\Debug\DecorationList.dll
+C:\Users\Tanmoy\Desktop\WeddingManagementSystem\DecorationList\obj\Debug\DecorationList.pdb

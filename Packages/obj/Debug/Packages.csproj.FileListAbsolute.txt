@@ -1,0 +1,12 @@
+F:\Assignment\WeddingManagementSystem\Packages\bin\Debug\Packages.exe.config
+F:\Assignment\WeddingManagementSystem\Packages\bin\Debug\Packages.exe
+F:\Assignment\WeddingManagementSystem\Packages\bin\Debug\Packages.pdb
+F:\Assignment\WeddingManagementSystem\Packages\obj\Debug\Packages.csprojResolveAssemblyReference.cache
+F:\Assignment\WeddingManagementSystem\Packages\obj\Debug\Packages.exe
+F:\Assignment\WeddingManagementSystem\Packages\obj\Debug\Packages.pdb
+C:\Users\Tanmoy\Desktop\WeddingManagementSystem\Packages\bin\Debug\Packages.dll.config
+C:\Users\Tanmoy\Desktop\WeddingManagementSystem\Packages\bin\Debug\Packages.dll
+C:\Users\Tanmoy\Desktop\WeddingManagementSystem\Packages\bin\Debug\Packages.pdb
+C:\Users\Tanmoy\Desktop\WeddingManagementSystem\Packages\obj\Debug\Packages.csprojResolveAssemblyReference.cache
+C:\Users\Tanmoy\Desktop\WeddingManagementSystem\Packages\obj\Debug\Packages.dll
+C:\Users\Tanmoy\Desktop\WeddingManagementSystem\Packages\obj\Debug\Packages.pdb

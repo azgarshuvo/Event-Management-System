@@ -1,0 +1,32 @@
+﻿<Window x:Class="WeddingManagementSystem.PackageInvoice"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="PackageInvoice" Height="578" Width="430">
+    <Grid Name="Package_Invoice_Grid" Background="#FFF3FBF8" Height="546" VerticalAlignment="Bottom">
+        <Label x:Name="label1" Content="    Wedding Management" HorizontalAlignment="Left" Height="41" Margin="56,0,0,0" VerticalAlignment="Top" Width="272" Foreground="#FF87C122" FontSize="22" FontWeight="Bold"/>
+        <Separator HorizontalAlignment="Left" Height="15" Margin="41,41,0,0" VerticalAlignment="Top" Width="338"/>
+        <Label x:Name="label" Content="Event ID:" HorizontalAlignment="Left" Height="41" Margin="41,56,0,0" VerticalAlignment="Top" Width="82" FontWeight="Bold" FontSize="17" Background="{x:Null}" Foreground="#FF060606"/>
+        <Label x:Name="label_Copy" Content="Event Date:" HorizontalAlignment="Left" Height="41" Margin="41,97,0,0" VerticalAlignment="Top" Width="112" FontWeight="Bold" FontSize="17" Background="{x:Null}" Foreground="#FF0E0D0D"/>
+        <Label x:Name="label_Copy1" Content="Start Time:" HorizontalAlignment="Left" Height="41" Margin="41,138,0,0" VerticalAlignment="Top" Width="112" FontWeight="Bold" FontSize="17" Background="{x:Null}" Foreground="#FF060606"/>
+        <Label x:Name="label_Copy2" Content="Package Id:" HorizontalAlignment="Left" Height="41" Margin="41,184,0,0" VerticalAlignment="Top" Width="112" FontWeight="Bold" FontSize="17" Background="{x:Null}" Foreground="#FF0A0909"/>
+        <Label x:Name="label_Copy3" Content="Package Name:" HorizontalAlignment="Left" Height="41" Margin="41,230,0,0" VerticalAlignment="Top" Width="134" FontWeight="Bold" FontSize="17" Background="{x:Null}" Foreground="#FF0C0B0B"/>
+        <Label x:Name="label_Copy4" Content="Package Cost:" HorizontalAlignment="Left" Height="41" Margin="41,276,0,0" VerticalAlignment="Top" Width="134" FontWeight="Bold" FontSize="17" Background="{x:Null}" Foreground="#FF131313"/>
+        <Label x:Name="label_Copy5" Content="Advance Pay:" HorizontalAlignment="Left" Height="41" Margin="41,322,0,0" VerticalAlignment="Top" Width="134" FontWeight="Bold" FontSize="17" Background="{x:Null}" Foreground="#FF0A0909"/>
+        <Label x:Name="label_Copy6" Content="Remaining:" HorizontalAlignment="Left" Height="41" Margin="41,368,0,0" VerticalAlignment="Top" Width="134" FontWeight="Bold" FontSize="17" Background="{x:Null}" Foreground="#FF080808"/>
+        <Separator HorizontalAlignment="Left" Height="15" Margin="41,169,0,0" VerticalAlignment="Top" Width="338"/>
+        <Separator HorizontalAlignment="Left" Height="15" Margin="41,261,0,0" VerticalAlignment="Top" Width="338" RenderTransformOrigin="0.467,4.933"/>
+        <Separator HorizontalAlignment="Left" Height="15" Margin="41,394,0,0" VerticalAlignment="Top" Width="338" RenderTransformOrigin="0.467,4.933"/>
+        <Label x:Name="label_Copy7" Content="Thank You ! for choosing us&#xD;&#xA;Contact : 01715665544&#xD;&#xA;Email: Tanvir@wedding.com" HorizontalAlignment="Left" Height="79" Margin="90,409,0,0" VerticalAlignment="Top" Width="249" FontWeight="Bold" FontSize="17" Background="{x:Null}" Foreground="#FF0A0909"/>
+        <Button x:Name="Close_Button" Content="Close" HorizontalAlignment="Left" Height="43" Margin="56,493,0,0" VerticalAlignment="Top" Width="94" Background="#FFD3CCCC" Foreground="#FF726742" FontWeight="Bold" FontSize="14"/>
+        <Button x:Name="Print_Button" Content="Print" HorizontalAlignment="Left" Height="43" Margin="250,493,0,0" VerticalAlignment="Top" Width="107" Background="#FFD3CCCC" Foreground="#FF45AA2E" FontWeight="Bold" FontSize="14" RenderTransformOrigin="-0.349,0.729"/>
+        <TextBlock x:Name="Event_Id_TextBlock"   HorizontalAlignment="Left" Height="26" Margin="215,61,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="164" FontSize="14" Foreground="#FF080808" FontWeight="Bold"/>
+        <TextBlock x:Name="Event_Date_TextBlock"   HorizontalAlignment="Left" Height="26" Margin="215,105,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="164" FontSize="14" Foreground="#FF080808" FontWeight="Bold"/>
+        <TextBlock x:Name="Start_Time_TextBlock"   HorizontalAlignment="Left" Height="26" Margin="215,138,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="164" FontSize="14" Foreground="#FF080808" FontWeight="Bold"/>
+        <TextBlock x:Name="Package_Id_TextBlock"   HorizontalAlignment="Left" Height="26" Margin="215,192,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="164" FontSize="14" Foreground="#FF080808" FontWeight="Bold"/>
+        <TextBlock x:Name="Package_Name_TextBlock"   HorizontalAlignment="Left" Height="26" Margin="215,235,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="164" FontSize="14" Foreground="#FF080808" FontWeight="Bold"/>
+        <TextBlock x:Name="Package_Cost_TextBlock"   HorizontalAlignment="Left" Height="26" Margin="215,284,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="164" FontSize="14" Foreground="#FF080808" FontWeight="Bold"/>
+        <TextBlock x:Name="Advance_Pay_TextBlock"   HorizontalAlignment="Left" Height="26" Margin="215,330,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="164" FontSize="14" Foreground="#FF080808" FontWeight="Bold"/>
+        <TextBlock x:Name="Remaining_TextBlock"   HorizontalAlignment="Left" Height="26" Margin="215,368,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="164" FontSize="14" Foreground="#FF080808" FontWeight="Bold"/>
+
+    </Grid>
+</Window>

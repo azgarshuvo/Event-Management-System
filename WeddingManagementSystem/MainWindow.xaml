@@ -1,0 +1,242 @@
+﻿<Window x:Class="WeddingManagementSystem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="600" Width="850">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Background="#FF172520" Height="auto" Width="auto" RenderTransformOrigin="0.565,0.517">
+            <Image Source="C:\Users\Tanmoy\Desktop\WeddingManagementSystem\three.jpg" Margin="0,0,0,481"/>
+            <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="5" Margin="6,79,0,0" VerticalAlignment="Top" Width="825" RenderTransformOrigin="0.5,0.5">
+                <Border.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Border.RenderTransform>
+            </Border>
+            <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="471" Margin="187,88,0,0" VerticalAlignment="Top" Width="3" RenderTransformOrigin="0.5,0.5"/>
+            <Grid Name="ProfileMenu"/>
+            <Border BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="5" Margin="198,146,0,0" VerticalAlignment="Top" Width="633" RenderTransformOrigin="0.5,0.5">
+                <Border.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Border.RenderTransform>
+            </Border>
+
+        </Grid>
+        <Grid Height="auto" Width="auto">
+            <Button x:Name="DecorationButton" Foreground="#FFFFD100" Content="Decoration" Margin="10,419,656,82" FontFamily="Times New Roman" FontSize="22" Background="OliveDrab" Click="DecorationButton_Click" />
+            <Button x:Name="SoftwareInfoButton" Foreground="#FFFFD100" Content="Software Info" Margin="10,487,656,19" FontFamily="Times New Roman" FontSize="22" Background="OliveDrab" Click="SoftwareInfoButton_Click" />
+            <Button Name="HomeButton" Foreground="#FFFFD100" Content="Home" Margin="10,89,656,419" FontFamily="Times New Roman" FontSize="22" Background="Green" Click="HomeButton_Click" />
+            <Button x:Name="MembersButton" Foreground="#FFFFD100" Content="Members" Margin="10,150,656,351" FontFamily="Times New Roman" FontSize="22" Background="OliveDrab" Click="MembersButton_Click" />
+            <Button x:Name="CreateEventButton" Foreground="#FFFFD100" Content="Create Event" Margin="10,218,656,282" FontFamily="Times New Roman" FontSize="22" Background="OliveDrab" Click="CreateEventButton_Click" />
+            <Button x:Name="PackagesButton" Foreground="#FFFFD100" Content="Packages" Margin="10,287,656,217" FontFamily="Times New Roman" FontSize="22" Background="OliveDrab" Click="PackagesButton_Click" />
+            <Button x:Name="CenterButton" Foreground="#FFFFD100" Content="Centers" Margin="10,352,656,150" FontFamily="Times New Roman" FontSize="22" Background="OliveDrab" Click="CenterButton_Click" />
+
+            <Grid Name="HomeGrid" Visibility="Visible" Height="auto" Width="auto">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <DatePicker Name="FromDate" FontSize="20" HorizontalAlignment="Left" Margin="211,414,0,0" VerticalAlignment="Top" Height="34" Width="196" Grid.Column="1"/>
+                <Button x:Name="ProfileButton" Foreground="#FFFFD100" Content="My Profile" Margin="1,90,215,422" FontFamily="Times New Roman" FontSize="22" Background="Green" Grid.Column="1" Click="ProfileButton_Click" />
+                <Button x:Name="LogoutButton" Foreground="#FFFFD100" Content="Log Out" Margin="211,90,10,422" FontFamily="Times New Roman" FontSize="22" Background="Brown" Grid.Column="1" Click="LogoutButton_Click" />
+                <DataGrid Name="EventDataGrid" HorizontalAlignment="Left" Margin="195,187,0,0" VerticalAlignment="Top" Height="222" Width="633" Grid.ColumnSpan="2" SelectionChanged="EventDataGrid_SelectionChanged"/>
+                <Button x:Name="UpcomingViewButton" Foreground="#FFFFD100" Content="View" Margin="113,504,10,20" FontFamily="Times New Roman" FontSize="22" Background="OliveDrab" Grid.Column="1" Click="UpcomingViewButton_Click" />
+                <TextBlock HorizontalAlignment="Left" Margin="210,153,0,0" TextWrapping="Wrap" Foreground="#FFFFD100" VerticalAlignment="Top" FontSize="22" Width="211" Height="29" Text="All Events"/>
+                <DatePicker Name="ToDate"  FontSize="20" HorizontalAlignment="Left" Margin="211,456,0,0" VerticalAlignment="Top" Height="34" Width="196" Grid.Column="1"/>
+                <TextBlock Name="From" Text="From :" FontSize="22" FontFamily="Times New Roman" Foreground="White" Margin="113,414,215,122" Grid.Column="1"/>
+                <TextBlock x:Name="From_Copy" Text="To     :" FontSize="22" FontFamily="Times New Roman" Foreground="White" Margin="113,456,230,80" Grid.Column="1" RenderTransformOrigin="1.026,0.647"/>
+                <Button x:Name="DeleteEvent" Foreground="#FFFFD100" Content="Remove" Margin="210,506,349,20" FontFamily="Times New Roman" FontSize="22" Background="Brown" Click="DeleteEvent_Click_1" Grid.ColumnSpan="2"  />
+                <TextBlock HorizontalAlignment="Left" Margin="195,414,0,0" TextWrapping="Wrap" Foreground="#FFFFD100" VerticalAlignment="Top" FontSize="22" Width="95" Height="34" Text=" Id   :"/>
+                <TextBox Name="EventIdTexBox" HorizontalAlignment="Left" Margin="257,414,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="26" Width="236" Height="34" Grid.ColumnSpan="2"/>
+                <Button x:Name="PaymentButton" Foreground="#FFFFD100" Content="Payment" Margin="210,456,349,69" FontFamily="Times New Roman" FontSize="22" Background="DarkGoldenrod"  Grid.ColumnSpan="2" Click="PaymentButton_Click" />
+            </Grid>
+
+            <Grid Name="MyProfileViewGrid" Visibility="Collapsed" Margin="333,89,280,430">
+                <Button Name="ChangePasswordButton" Content="Change Password" Foreground="Yellow" FontSize="22" Background="SeaGreen" Margin="260,0,-260,-9" Click="ChangePasswordButton_Click" HorizontalAlignment="Left" Width="229"/>
+                <TextBlock Name="Profile" Text="My Profile" FontSize="34" FontFamily="Times New Roman" Foreground="Green" Margin="96,66,-22,-60"/>
+                <TextBlock Name="EmpId" Text="Id                          :" FontSize="22" FontFamily="Times New Roman" Foreground="WhiteSmoke" Margin="-90,120,141,-102"/>
+                <TextBlock Name="MyName" Text="Name                    :" FontSize="22" FontFamily="Times New Roman" Foreground="WhiteSmoke" Margin="-90,157,141,-140"/>
+                <TextBlock Name="DOB" Text="Date Of Birth        :" FontSize="22" FontFamily="Times New Roman" Foreground="WhiteSmoke" Margin="-90,195,141,-177"/>
+                <TextBlock Name="ads" Text="Address                 :" FontSize="22" FontFamily="Times New Roman" Foreground="WhiteSmoke" Margin="-90,232,141,-213"/>
+                <TextBlock Name="phnNumber" Text="Contact Number   :" FontSize="22" FontFamily="Times New Roman" Foreground="WhiteSmoke" Margin="-90,268,111,-249"/>
+                <TextBlock Name="Email" Text="Email                    :" FontSize="22" FontFamily="Times New Roman" Foreground="WhiteSmoke" Margin="-90,304,141,-285"/>
+                <TextBlock Name="position" Text="Position                :" FontSize="22" FontFamily="Times New Roman" Foreground="WhiteSmoke" Margin="-90,378,141,-361"/>
+                <TextBlock Name="salary" Text="Salary                   :" FontSize="22" FontFamily="Times New Roman" Foreground="WhiteSmoke" Margin="-90,416,141,-399"/>
+                <TextBlock x:Name="EmployeeId"  FontSize="22" FontFamily="Times New Roman" Foreground="WhiteSmoke" Margin="96,120,-260,-102"/>
+                <TextBlock x:Name="EmployeeName"  FontSize="22" FontFamily="Times New Roman" Foreground="WhiteSmoke" Margin="96,157,-260,-140"/>
+                <TextBlock x:Name="EmployeeDateOfBirth"  FontSize="22" FontFamily="Times New Roman" Foreground="WhiteSmoke" Margin="96,195,-260,-177"/>
+                <TextBlock x:Name="EmployeeAddress"  FontSize="22" FontFamily="Times New Roman" Foreground="WhiteSmoke" Margin="96,232,-260,-213"/>
+                <TextBlock x:Name="EmployeeConatactNumber"  FontSize="22" FontFamily="Times New Roman" Foreground="WhiteSmoke" Margin="96,268,-268,-249"/>
+                <TextBlock x:Name="EmployeeEmail"  FontSize="22" FontFamily="Times New Roman" Foreground="WhiteSmoke" Margin="96,304,-268,-285"/>
+                <TextBlock x:Name="EmployeePosition"  FontSize="22" FontFamily="Times New Roman" Foreground="WhiteSmoke" Margin="96,378,-268,-361" HorizontalAlignment="Left" Width="401"/>
+                <TextBlock x:Name="EmployeeSalary"  FontSize="22" FontFamily="Times New Roman" Foreground="WhiteSmoke" Margin="96,416,-263,-399"/>
+                <TextBlock x:Name="JoinDate" Text="Join Date              :" FontSize="22" FontFamily="Times New Roman" Foreground="WhiteSmoke" Margin="-90,340,141,-323"/>
+                <TextBlock x:Name="EmployeeJoinDate"  FontSize="22" FontFamily="Times New Roman" Foreground="WhiteSmoke" Margin="96,340,-268,-323"/>
+            </Grid>
+            <Grid Name="SoftwareInfoGrid" Visibility="Collapsed" Margin="191,89,-202,-178">
+                <TextBlock Name="SoftwareInfo" FontSize="36" FontFamily="Times New Roman" Foreground="Yellow" Margin="215,68,421,505" Text="Software Info"/>
+                <TextBlock Name ="Name" FontSize="26" FontFamily="Times New Roman" Foreground="#FF3AFF27" Margin="10,115,614,463" Text="Project Name           : "/>
+                <TextBlock Name ="SoftwareName" FontSize="48" FontFamily="Times New Roman" Foreground="#FFEAEAEA" Margin="10,0,216,562" Text="Wedding Management System"/>
+                <TextBlock Name ="versionInfo" FontSize="26" FontFamily="Times New Roman" Foreground="#FF3AFF27" Margin="293,152,487,426" Text="1.0.1"/>
+                <TextBlock Name ="Version" FontSize="26" FontFamily="Times New Roman" Foreground="#FF3AFF27" Margin="10,152,614,426" Text="Version                     : "/>
+                <TextBlock Name ="CreatedBy" FontSize="26" FontFamily="Times New Roman" Foreground="#FF3AFF27" Margin="10,194,614,383" Text="System Created By  : "/>
+                <TextBlock Name ="NAme1" FontSize="26" FontFamily="Times New Roman" Foreground="#FF3AFF27" Margin="250,194,226,382" Text="Evan Sihab 14-26649-2"/>
+                <TextBlock Name ="NAme2" FontSize="26" FontFamily="Times New Roman" Foreground="#FF3AFF27" Margin="250,268,226,311" Text="SM Tanvir Tonmoy 14-26675-2" RenderTransformOrigin="0.51,0.682"/>
+                <TextBlock Name ="NAme3" FontSize="26" FontFamily="Times New Roman" Foreground="#FF3AFF27" Margin="250,304,216,267" Text="Husnatuzzaman Nipun 14-26686-2"/>
+                <TextBlock Name ="NAme4" FontSize="26" FontFamily="Times New Roman" Foreground="#FF3AFF27" Margin="250,233,226,347" Text="Md Azgar Shuvo 14-26656-2"/>
+                <TextBlock Name ="Dept" FontSize="26" FontFamily="Times New Roman" Foreground="#FF3AFF27" Margin="55,400,253,181" Text="Department Of Computer Science And Engineering"/>
+                <TextBlock Name ="uni" FontSize="26" FontFamily="Times New Roman" Foreground="#FF3AFF27" Margin="72,434,253,145" Text="American International University - Bangladesh"/>
+                <TextBlock Name ="sub" FontSize="26" FontFamily="Times New Roman" Foreground="#FF3AFF27" Margin="128,361,355,215" Text="Object Oriented Programming - 2"/>
+            </Grid>
+            <Grid Name="MemberGrid" Visibility="Collapsed" Height="auto" Width="auto">
+                <Button x:Name="AllMemberButton" Foreground="#FFFFD100" Content="All" Margin="194,90,491,424" FontFamily="Times New Roman" FontSize="22" Background="Green" Click="AllMemberButton_Click" />
+                <Button x:Name="PhotographyMemberButton" Foreground="#FFFFD100" Content="Photographers" Margin="351,90,330,424" FontFamily="Times New Roman" FontSize="22" Background="OliveDrab" Click="PhotographyMemberButton_Click" />
+                <Button x:Name="ManagerMemberButton" Foreground="#FFFFD100" Content="Managers" Margin="512,90,170,424" FontFamily="Times New Roman" FontSize="22" Background="OliveDrab" Click="ManagerMemberButton_Click" />
+                <Button x:Name="StaffMemberButton" Foreground="#FFFFD100" Content="Staff" Margin="672,90,10,424" FontFamily="Times New Roman" FontSize="22" Background="OliveDrab" Click="StaffMemberButton_Click"/>
+                <DataGrid SelectionChanged="MembersListGrid_SelectionChanged" AutoGenerateColumns="False" Name="MembersListGrid" HorizontalAlignment="Left" Margin="199,160,0,0" VerticalAlignment="Top" Height="266" Width="623">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="ID" Binding="{Binding MemberId}" />
+                        <DataGridTextColumn Header="NAME" Binding="{Binding MemberName}" />
+                        <DataGridTextColumn Header="Position" Binding="{Binding MemberPosition}" />
+                        <DataGridTextColumn Header="Birth" Binding="{Binding DateOfBirth}" />
+                        <DataGridTextColumn Header="Contact" Binding="{Binding ContactNumber}" />
+                        <DataGridTextColumn Header="JoinDate" Binding="{Binding JoinDate}" />
+                        <DataGridTextColumn Header="Email" Binding="{Binding Email}" />
+                        <DataGridTextColumn Header="Address" Binding="{Binding Address}" />
+                        <DataGridTextColumn Header="Salary" Binding="{Binding Salary}" />
+                    </DataGrid.Columns>
+                </DataGrid>
+                <TextBlock HorizontalAlignment="Left" Margin="199,448,0,0" Foreground="#FFFFD100" FontSize="22" TextWrapping="Wrap" Text="ID :" VerticalAlignment="Top" Width="52" Height="35" FontFamily="Times New Roman"/>
+                <TextBlock HorizontalAlignment="Left" Margin="505,448,0,0" Foreground="#FFFFD100" FontSize="22" TextWrapping="Wrap" Text="Name :" VerticalAlignment="Top" Width="73" Height="35" FontFamily="Times New Roman"/>
+                <TextBox Name = "MemberIdTextBox" HorizontalAlignment="Left" Height="32" Margin="239,448,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="249" FontSize="18" RenderTransformOrigin="0.498,0.156" FontFamily="Times New Roman"/>
+                <TextBox x:Name = "MemberNameTextBox" HorizontalAlignment="Left" Height="32" Margin="578,448,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="244" FontSize="18" RenderTransformOrigin="0.498,0.156" FontFamily="Times New Roman"/>
+                <Button x:Name="AddMemberButton" Foreground="#FFFFD100" Content="Add Member" Margin="194,488,491,22" FontFamily="Times New Roman" FontSize="22" Background="Green" Click="AddMemberButton_Click" />
+                <Button x:Name="MemberSearchButton" Foreground="#FFFFD100" Content="Search" Margin="351,488,330,22" FontFamily="Times New Roman" FontSize="22" Background="Gray" Click="MemberSearchButton_Click" />
+                <Button x:Name="MemberUpdateButton" Foreground="#FFFFD100" Content="Update" Margin="512,488,170,22" FontFamily="Times New Roman" FontSize="22" Background="DarkCyan" Click="MemberUpdateButton_Click" />
+                <Button x:Name="MemberRemoveButton" Foreground="#FFFFD100" Content="Remove" Margin="672,488,10,22" FontFamily="Times New Roman" FontSize="22" Background="Brown" Click="MemberRemoveButton_Click" />
+            </Grid>
+
+            <Grid Name="PackageGrid" Margin="0,10,0,-10" Height="auto" Width="auto" Visibility="Collapsed">
+                <Grid Name="PackageMenuGrid" Height="auto" Width="auto">
+                    <Button Name="AllPackageButton" Foreground="#FFFFD100" Content="All" Margin="200,78,437,436" FontFamily="Times New Roman" FontSize="22" Background="OliveDrab" Click="AllPackageButton_Click" />
+                    <Button x:Name="NewPackageButton" Foreground="#FFFFD100" Content="New" Margin="410,78,220,436" FontFamily="Times New Roman" FontSize="22" Background="Green" Click="NewPackageButton_Click" />
+                    <Button x:Name="CreateNewPackageButton" Foreground="#FFFFD100" Content="Create New" Margin="627,78,10,436" FontFamily="Times New Roman" FontSize="22" Background="OliveDrab"  />
+                </Grid>
+
+                <Grid Name="AllPackagesGrid" Height="auto" Width="auto" Visibility="Collapsed">
+                    <DataGrid HorizontalAlignment="Left" Margin="199,160,0,0" VerticalAlignment="Top" Height="266" Width="623"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="199,448,0,0" Foreground="#FFFFD100" FontSize="22" TextWrapping="Wrap" Text="ID :" VerticalAlignment="Top" Width="52" Height="35" FontFamily="Times New Roman"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="505,448,0,0" Foreground="#FFFFD100" FontSize="22" TextWrapping="Wrap" Text="Name :" VerticalAlignment="Top" Width="73" Height="35" FontFamily="Times New Roman"/>
+                    <TextBox Name = "PackageIdTextBox" HorizontalAlignment="Left" Height="32" Margin="239,448,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="249" FontSize="18" RenderTransformOrigin="0.498,0.156" FontFamily="Times New Roman"/>
+                    <TextBox x:Name = "PackageNameTextBox" HorizontalAlignment="Left" Height="32" Margin="578,448,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="244" FontSize="18" RenderTransformOrigin="0.498,0.156" FontFamily="Times New Roman"/>
+                    <Button x:Name="PackageSearchButton" Foreground="#FFFFD100" Content="Search" Margin="199,488,436,22" FontFamily="Times New Roman" FontSize="22" Background="Gray" />
+                    <Button x:Name="PackageUpdateButton" Foreground="#FFFFD100" Content="Update" Margin="411,488,224,22" FontFamily="Times New Roman" FontSize="22" Background="DarkCyan" />
+                    <Button x:Name="PackageRemoveButton" Foreground="#FFFFD100" Content="Remove" Margin="623,488,10,22" FontFamily="Times New Roman" FontSize="22" Background="Brown" />
+                </Grid>
+
+                <Grid Name="NewPackagesGrid" Height="auto" Width="auto" Visibility="Visible">
+                    <Button x:Name="PlatinumPackageButton" Foreground="#FFFFD100" Content="" Margin="200,152,330,228" FontFamily="Times New Roman" FontSize="30" Background="#FF5F5F1D" />
+                    <TextBlock HorizontalAlignment="Left" Margin="280,167,0,0" TextWrapping="Wrap" Text="Platinum" FontSize="40" FontFamily="Times New Roman" Foreground="White" VerticalAlignment="Top" Width="155" RenderTransformOrigin="0.503,-0.152"/>
+                    <TextBlock Name="PlatinumPackagePhotographerText" HorizontalAlignment="Left" Margin="253,213,0,0" TextWrapping="Wrap" Text=" Two Photographer" FontSize="24" FontFamily="Times New Roman" Foreground="Black" VerticalAlignment="Top" Width="193"/>
+                    <TextBlock Name="PlatinumPackageDecorationCenterText" HorizontalAlignment="Left" Margin="253,241,0,0" TextWrapping="Wrap" Text="Center + Decoration" FontSize="24" FontFamily="Times New Roman" Foreground="Black" VerticalAlignment="Top" Width="202"/>
+                    <TextBlock Name="PlatinumPackageDaysText" HorizontalAlignment="Left" Margin="310,269,0,0" TextWrapping="Wrap" Text="3 Days" FontSize="24" FontFamily="Times New Roman" Foreground="Black" VerticalAlignment="Top" Width="75"/>
+                    <TextBlock Name="PlatinumPackageCostText" HorizontalAlignment="Left" Margin="280,297,0,0" TextWrapping="Wrap" Text="Total Money" FontSize="24" FontFamily="Times New Roman" Foreground="Black" VerticalAlignment="Top" Width="125"/>
+
+                    <Button x:Name="GoldPackageButton" Foreground="#FFFFD100" Content="" Margin="517,152,10,228" FontFamily="Times New Roman" FontSize="30" Background="Goldenrod" />
+                    <TextBlock HorizontalAlignment="Left" Margin="628,167,0,0" TextWrapping="Wrap" Text="Gold" FontSize="40" FontFamily="Times New Roman" Foreground="White" VerticalAlignment="Top" Width="85" RenderTransformOrigin="0.576,0"/>
+                    <TextBlock Name="GoldPackagePhotographerText" HorizontalAlignment="Left" Margin="584,213,0,0" TextWrapping="Wrap" Text=" Two Photographer" FontSize="24" FontFamily="Times New Roman" Foreground="Black" VerticalAlignment="Top" Width="193"/>
+                    <TextBlock Name="GoldPackageDecorationCenterText" HorizontalAlignment="Left" Margin="584,241,0,0" TextWrapping="Wrap" Text="Center + Decoration" FontSize="24" FontFamily="Times New Roman" Foreground="Black" VerticalAlignment="Top" Width="202"/>
+                    <TextBlock Name="GoldPackageDaysText" HorizontalAlignment="Left" Margin="648,269,0,0" TextWrapping="Wrap" Text="3 Days" FontSize="24" FontFamily="Times New Roman" Foreground="Black" VerticalAlignment="Top" Width="75"/>
+                    <TextBlock Name="GoldPackageCostText" HorizontalAlignment="Left" Margin="627,297,0,0" TextWrapping="Wrap" Text="Total Money" FontSize="24" FontFamily="Times New Roman" Foreground="Black" VerticalAlignment="Top" Width="125"/>
+
+                    <Button x:Name="SilverPackageButton" Foreground="#FFFFD100" Content="" Margin="200,346,330,29" FontFamily="Times New Roman" FontSize="30" Background="Silver" />
+                    <TextBlock HorizontalAlignment="Left" Margin="297,357,0,0" TextWrapping="Wrap" Text="Silver" FontSize="40" FontFamily="Times New Roman" Foreground="White" VerticalAlignment="Top" Width="108"/>
+                    <TextBlock Name="SilverPackagePhotographerText" HorizontalAlignment="Left" Margin="253,403,0,0" TextWrapping="Wrap" Text=" Two Photographer" FontSize="24" FontFamily="Times New Roman" Foreground="Black" VerticalAlignment="Top" Width="193"/>
+                    <TextBlock Name="SilverPackageDecorationCenterText" HorizontalAlignment="Left" Margin="253,436,0,0" TextWrapping="Wrap" Text="Center + Decoration" FontSize="24" FontFamily="Times New Roman" Foreground="Black" VerticalAlignment="Top" Width="202"/>
+                    <TextBlock Name="SilverPackageDaysText" HorizontalAlignment="Left" Margin="310,469,0,0" TextWrapping="Wrap" Text="3 Days" FontSize="24" FontFamily="Times New Roman" Foreground="Black" VerticalAlignment="Top" Width="75"/>
+                    <TextBlock Name="SilverPackageCostText" HorizontalAlignment="Left" Margin="280,497,0,0" TextWrapping="Wrap" Text="Total Money" FontSize="24" FontFamily="Times New Roman" Foreground="Black" VerticalAlignment="Top" Width="125"/>
+
+                    <Button x:Name="RegularPackageButton" Foreground="#FFFFD100" Content="" Margin="517,346,10,29" FontFamily="Times New Roman" FontSize="30" Background="#FFB65918" />
+                    <TextBlock HorizontalAlignment="Left" Margin="603,357,0,0" TextWrapping="Wrap" Text="Regular" FontSize="40" FontFamily="Times New Roman" Foreground="White" VerticalAlignment="Top" Width="149" RenderTransformOrigin="0.336,0.543"/>
+                    <TextBlock Name="RegularPackagePhotographerText" HorizontalAlignment="Left" Margin="575,403,0,0" TextWrapping="Wrap" Text=" Two Photographer" FontSize="24" FontFamily="Times New Roman" Foreground="Black" VerticalAlignment="Top" Width="193"/>
+                    <TextBlock Name="RegularPackageDecorationCenterText" HorizontalAlignment="Left" Margin="575,436,0,0" TextWrapping="Wrap" Text="Center + Decoration" FontSize="24" FontFamily="Times New Roman" Foreground="Black" VerticalAlignment="Top" Width="202"/>
+                    <TextBlock Name="RegularPackageDaysText" HorizontalAlignment="Left" Margin="638,469,0,0" TextWrapping="Wrap" Text="3 Days" FontSize="24" FontFamily="Times New Roman" Foreground="Black" VerticalAlignment="Top" Width="75"/>
+                    <TextBlock Name="RegularPackageCostText" HorizontalAlignment="Left" Margin="603,497,0,0" TextWrapping="Wrap" Text="Total Money" FontSize="24" FontFamily="Times New Roman" Foreground="Black" VerticalAlignment="Top" Width="125"/>
+                </Grid>
+            </Grid>
+
+            <Grid Name="CenterGrid" Margin="0,10,0,-10" Height="auto" Width="auto" Visibility="Collapsed">
+                <Grid Name="CenterMenuGrid" Height="auto" Width="auto">
+                    <Button Name="AllCenterButton" Foreground="#FFFFD100" Content="All" Margin="200,78,437,436" FontFamily="Times New Roman" FontSize="22" Background="Green" Click="AllCenterButton_Click" />
+                    <Button x:Name="ReserveCenterButton" Foreground="#FFFFD100" Content="Available" Margin="410,78,220,436" FontFamily="Times New Roman" FontSize="22" Background="OliveDrab" Click="ReserveCenterButton_Click"/>
+                    <Button x:Name="AddNewCenterButton" Foreground="#FFFFD100" Content="Add New" Margin="627,78,10,436" FontFamily="Times New Roman" FontSize="22" Background="OliveDrab" Click="AddNewCenterButton_Click" />
+                </Grid>
+
+                <Grid Name="AllCenterGrid" Height="auto" Width="auto" Visibility="Visible">
+                    <DataGrid  AutoGenerateColumns="False"  Name ="centerDataGrid" HorizontalAlignment="Left" Margin="196,153,0,0" VerticalAlignment="Top" Height="189" Width="636" SelectionChanged="centerDataGrid_SelectionChanged">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="ID" Binding="{Binding CenterId}" />
+                            <DataGridTextColumn Header="Name" Binding="{Binding CenterName}" />
+                            <DataGridTextColumn Header="Capacity" Binding="{Binding CenterCapacity}" />
+                            <DataGridTextColumn Header="Location" Binding="{Binding CenterLocation}" />
+                            <DataGridTextColumn Header="Cost" Binding="{Binding CenterCost}" />
+                            <DataGridTextColumn Header="Catering" Binding="{Binding FoodCatering}" />
+                            <DataGridTextColumn Header="Status" Binding="{Binding CenterStatus}" />
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <TextBlock HorizontalAlignment="Left" Margin="199,344,0,0" Foreground="#FFFFD100" FontSize="22" TextWrapping="Wrap" Text="ID           :" VerticalAlignment="Top" Width="104" Height="36" FontFamily="Times New Roman"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="514,344,0,0" Foreground="#FFFFD100" FontSize="22" TextWrapping="Wrap" Text="Name       :" VerticalAlignment="Top" Width="104" Height="35" FontFamily="Times New Roman"/>
+                    <TextBox Name = "CenterIdTextBox" HorizontalAlignment="Left" Height="32" Margin="303,344,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185" FontSize="18" RenderTransformOrigin="0.498,0.156" FontFamily="Times New Roman" />
+                    <TextBox x:Name = "CenterNameTextBox" HorizontalAlignment="Left" Height="32" Margin="623,344,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197" FontSize="18" RenderTransformOrigin="0.498,0.156" FontFamily="Times New Roman"/>
+                    <Button x:Name="CenterSearchButton" Foreground="#FFFFD100" Content="Search" Margin="199,495,436,22" FontFamily="Times New Roman" FontSize="22" Background="Gray" Click="CenterSearchButton_Click" />
+                    <Button x:Name="CenterUpdateButton" Foreground="#FFFFD100" Content="Update" Margin="411,495,224,22" FontFamily="Times New Roman" FontSize="22" Background="DarkCyan" Click="CenterUpdateButton_Click" />
+                    <Button x:Name="CenterRemoveButton" Foreground="#FFFFD100" Content="Remove" Margin="623,495,10,22" FontFamily="Times New Roman" FontSize="22" Background="Brown" Click="CenterRemoveButton_Click" />
+                    <TextBox x:Name = "CenterCapacityTextBox" HorizontalAlignment="Left" Height="32" Margin="303,381,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185" FontSize="18" RenderTransformOrigin="0.498,0.156" FontFamily="Times New Roman"/>
+                    <TextBox x:Name = "CenterCostTextBox" HorizontalAlignment="Left" Height="32" Margin="623,381,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197" FontSize="18" RenderTransformOrigin="0.498,0.156" FontFamily="Times New Roman"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="514,381,0,0" Foreground="#FFFFD100" FontSize="22" TextWrapping="Wrap" Text="Cost         :" VerticalAlignment="Top" Width="104" Height="35" FontFamily="Times New Roman" RenderTransformOrigin="0.529,0.086"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="199,381,0,0" Foreground="#FFFFD100" FontSize="22" TextWrapping="Wrap" Text="Capacity :" VerticalAlignment="Top" Width="104" Height="36" FontFamily="Times New Roman"/>
+                    <TextBox x:Name = "CenterFoodTextBox" HorizontalAlignment="Left" Height="32" Margin="303,418,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="517" FontSize="18" RenderTransformOrigin="0.498,0.156" FontFamily="Times New Roman"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="199,418,0,0" Foreground="#FFFFD100" FontSize="22" TextWrapping="Wrap" Text="Foods     :" VerticalAlignment="Top" Width="104" Height="36" FontFamily="Times New Roman"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="199,454,0,0" Foreground="#FFFFD100" FontSize="22" TextWrapping="Wrap" Text="Location :" VerticalAlignment="Top" Width="104" Height="36" FontFamily="Times New Roman"/>
+                    <TextBox x:Name = "CenterLocationTextBox" HorizontalAlignment="Left" Height="32" Margin="303,455,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="517" FontSize="18" RenderTransformOrigin="0.498,0.156" FontFamily="Times New Roman"/>
+                </Grid>
+            </Grid>
+
+            <Grid Name="DecorationrGrid" Margin="0,10,0,-10" Height="auto" Width="auto" Visibility="Collapsed">
+                <Grid Name="DecorationMenuGrid" Height="auto" Width="auto">
+                    <Button Name="StageButton" Foreground="#FFFFD100" Content="Stage" Margin="200,78,515,436" FontFamily="Times New Roman" FontSize="22" Background="Green" Click="StageButton_Click"/>
+                    <Button x:Name="HomeLightButton" Foreground="#FFFFD100" Content="HomeLight" Margin="332,78,389,436" FontFamily="Times New Roman" FontSize="22" Background="OliveDrab" Click="HomeLightButton_Click"/>
+                    <Button x:Name="StreetLightButton" Foreground="#FFFFD100" Content="StreetLight" Margin="458,78,267,436" FontFamily="Times New Roman" FontSize="22" Background="OliveDrab" Click="StreetLightButton_Click" />
+                    <Button x:Name="GateButton" Foreground="#FFFFD100" Content="Gate" Margin="580,78,135,436" FontFamily="Times New Roman" FontSize="22" Background="OliveDrab" Click="GateButton_Click" />
+                    <Button x:Name="PalanquinButton" Foreground="#FFFFD100" Content="Palanquin" Margin="712,78,10,436" FontFamily="Times New Roman" FontSize="22" Background="OliveDrab" Click="PalanquinButton_Click" />
+                </Grid>
+
+                <Grid Name="DecorationItemGrid" Height="auto" Width="auto" Visibility="Visible">
+                    <DataGrid Name="DecorationDataGrid" HorizontalAlignment="Left" Margin="199,160,0,0" VerticalAlignment="Top" Height="266" Width="623" SelectionChanged="DecorationUpgradeGrid_SelectionChanged"/>
+                </Grid>
+                <Grid Visibility="Visible">
+                    <TextBlock HorizontalAlignment="Left" Margin="443,439,0,0" Foreground="#FFFFD100" FontSize="22" TextWrapping="Wrap" Text="Type :" VerticalAlignment="Top" Width="61" Height="35" FontFamily="Times New Roman" RenderTransformOrigin="0.867,0.657"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="636,439,0,0" Foreground="#FFFFD100" FontSize="22" TextWrapping="Wrap" Text="Cost :" VerticalAlignment="Top" Width="60" Height="35" FontFamily="Times New Roman"/>
+                    <TextBox Name = "DecorationStatusTextBox" HorizontalAlignment="Left" Height="32" Margin="504,439,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="127" FontSize="18" RenderTransformOrigin="0.498,0.156" FontFamily="Times New Roman"/>
+                    <TextBox Name = "DecorationCostTextBox" HorizontalAlignment="Left" Height="32" Margin="696,439,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="126" FontSize="18" RenderTransformOrigin="0.498,0.156" FontFamily="Times New Roman"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="197,439,0,0" Foreground="#FFFFD100" FontSize="22" TextWrapping="Wrap" Text="Decoration :" VerticalAlignment="Top" Width="113" Height="35" FontFamily="Times New Roman"/>
+                    <TextBox Name = "DecorationNameTextBox" HorizontalAlignment="Left" Height="32" Margin="310,439,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="128" FontSize="18" RenderTransformOrigin="0.498,0.156" FontFamily="Times New Roman"/>
+                    <Button x:Name="DecorationUpdateButton" Foreground="#FFFFD100" Content="Update" Margin="411,488,224,22" FontFamily="Times New Roman" FontSize="22" Background="DarkCyan" Click="DecorationUpdateButton_Click" />
+                    <Button x:Name="DecorationRemoveButton" Foreground="#FFFFD100" Content="Remove" Margin="623,488,10,22" FontFamily="Times New Roman" FontSize="22" Background="Brown" Click="DecorationRemoveButton_Click" />
+                    <Button x:Name="AddNewDecorationButton" Foreground="#FFFFD100" Content="Add New" Margin="197,488,436,22" FontFamily="Times New Roman" FontSize="22" Background="Gray" Click="AddNewDecorationButton_Click" />
+                </Grid>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

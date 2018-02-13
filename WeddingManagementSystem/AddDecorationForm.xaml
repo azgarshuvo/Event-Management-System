@@ -1,0 +1,23 @@
+﻿<Window x:Class="WeddingManagementSystem.AddDecorationForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WeddingManagementSystem"
+        mc:Ignorable="d"
+        Title="EventPhotography" Height="576" Width="430">
+    <Grid Background="#FF07482F">
+        <TextBlock FontFamily="Times New Roman" FontSize="30" FontStyle="Normal" FontWeight="Bold" Foreground="#FF56ABBA" Height="33" HorizontalAlignment="Left" Margin="125,19,0,0" x:Name="textBlock1" Text="Decoration:" VerticalAlignment="Top" Width="205" />
+        <Border Background="#FF454583" BorderBrush="Silver" BorderThickness="1" Height="4" x:Name="border2" Width="351" Margin="35,69,36,473" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="35,125,0,0" x:Name="textBlock2" Text="Item                      :" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="16" Foreground="#FF92F2A9" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="35,174,0,0" x:Name="textBlock2_Copy" Text="Type                      :" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="16" Foreground="#FF92F2A9" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="35,222,0,0" x:Name="textBlock2_Copy1" Text="Cost                      :" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="16" Foreground="#FF92F2A9" RenderTransformOrigin="0.543,3.469" />
+        <ComboBox  Height="23" HorizontalAlignment="Left" Margin="207,125,0,0" x:Name="itemTextBox" VerticalAlignment="Top" Width="179" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="207,174,0,0" x:Name="typeTextBox" VerticalAlignment="Top" Width="179" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="207,222,0,0" x:Name="costTextBox" VerticalAlignment="Top" Width="179" />
+        <Button Content="Cancel" Height="23" HorizontalAlignment="Left" Margin="35,433,0,0" x:Name="decorationCancelButton" VerticalAlignment="Top" Width="158" FontWeight="Bold" FontFamily="Times New Roman" Background="#FFC4361C" RenderTransformOrigin="0.534,-2.03"/>
+        <Button Background="#FF33CCE8" Content="Add" FontFamily="Times New Roman" FontWeight="Bold" Height="23" HorizontalAlignment="Left" Margin="218,433,0,0" x:Name="decorationAddButton" VerticalAlignment="Top" Width="168" Click="decorationAddButton_Click" />
+        <Border Background="#FF454583" BorderBrush="Silver" BorderThickness="1" Height="4" x:Name="border2_Copy" Width="351" Margin="35,341,36,201" />
+
+    </Grid>
+</Window>

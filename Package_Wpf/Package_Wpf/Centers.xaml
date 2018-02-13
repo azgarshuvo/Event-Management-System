@@ -1,0 +1,31 @@
+﻿<Window x:Class="Package_Wpf.Centers"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Package_Wpf"
+        mc:Ignorable="d"
+       Title="Create Packages" Height="576" Width="430" Foreground="#FFE2E8EC">
+    <Grid Name="Centers_Grid" Background="#FF07482F">
+        <Label x:Name="label1" Content="      Centers " HorizontalAlignment="Left" Height="41" Margin="127,0,0,0" VerticalAlignment="Top" Width="199" Foreground="#FF87C122" FontSize="22" FontWeight="Bold"/>
+        <Separator HorizontalAlignment="Left" Height="0" Margin="0,66,0,0" VerticalAlignment="Top" Width="422"/>
+        <Separator HorizontalAlignment="Left" Height="0" Margin="10,66,0,0" VerticalAlignment="Top" Width="412"/>
+        <Separator HorizontalAlignment="Left" Height="15" Margin="41,37,0,0" VerticalAlignment="Top" Width="338"/>
+        <Label x:Name="label" Content="" HorizontalAlignment="Left" Height="34" Margin="10,41,0,0" VerticalAlignment="Top" Width="142" Background="{x:Null}" Foreground="#FFF3EEEE" FontWeight="Bold" FontSize="16"/>
+        <DataGrid x:Name="Centerinfo_dataGrid" HorizontalAlignment="Left" Height="82" Margin="10,71,0,0" VerticalAlignment="Top" Width="402" BorderBrush="#FF50D13C" Background="#FFADD894"/>
+        <Button x:Name="Add_This_Center_Button" Content="Add This Center" HorizontalAlignment="Left" Height="37" Margin="260,158,0,0" VerticalAlignment="Top" Width="152" FontWeight="Bold" FontSize="16"/>
+        <Separator HorizontalAlignment="Left" Height="0" Margin="0,292,0,0" VerticalAlignment="Top" Width="422"/>
+        <Separator HorizontalAlignment="Left" Height="0" Margin="10,292,0,0" VerticalAlignment="Top" Width="412"/>
+        <Label x:Name="label_Copy" Content="Added List:" HorizontalAlignment="Left" Height="34" Margin="10,215,0,0" VerticalAlignment="Top" Width="142" Background="{x:Null}" Foreground="#FFF3EEEE" FontWeight="Bold" FontSize="16"/>
+        <DataGrid x:Name="Addedcenter_dataGrid" HorizontalAlignment="Left" Height="123" Margin="10,249,0,0" VerticalAlignment="Top" Width="402" BorderBrush="#FF50D13C" Background="#FF96C37D"/>
+        <Button x:Name="Remove_This_Center_Button" Content="Remove This Center" HorizontalAlignment="Left" Height="37" Margin="240,390,0,0" VerticalAlignment="Top" Width="172" FontWeight="Bold" FontSize="16"/>
+        <Separator HorizontalAlignment="Left" Height="15" Margin="41,200,0,0" VerticalAlignment="Top" Width="338"/>
+        <Label x:Name="label_Copy1" Content="Center Info :" HorizontalAlignment="Left" Height="34" Margin="10,37,0,0" VerticalAlignment="Top" Width="142" Background="{x:Null}" Foreground="#FFF3EEEE" FontWeight="Bold" FontSize="16"/>
+        <Separator HorizontalAlignment="Left" Height="15" Margin="41,447,0,0" VerticalAlignment="Top" Width="338"/>
+        <Button x:Name="Continue_Button" Content="Continue" HorizontalAlignment="Left" Height="49" Margin="327,464,0,0" VerticalAlignment="Top" Width="72" Background="#FFCDC6C6" FontSize="14" FontWeight="Bold" Foreground="#FF58811D" />
+        <Button x:Name="Cancel_Button" Content="Cancel" HorizontalAlignment="Left" Height="49" Margin="17,464,0,0" VerticalAlignment="Top" Width="94" Background="#FFD3CCCC" Foreground="#FFF31C1C" FontWeight="Bold" FontSize="14"/>
+        <Button x:Name="Skip_Button" Content="Skip" HorizontalAlignment="Left" Height="49" Margin="254,464,0,0" VerticalAlignment="Top" Width="68" Background="#FFD3CCCC" Foreground="#FF32B496" FontWeight="Bold" FontSize="14"/>
+        <Button x:Name="Back_Button" Content="Back" HorizontalAlignment="Left" Height="49" Margin="116,464,0,0" VerticalAlignment="Top" Width="68" Background="#FFD3CCCC" Foreground="#FF1D2112" FontWeight="Bold" FontSize="14" RenderTransformOrigin="-0.349,0.729"/>
+
+    </Grid>
+</Window>

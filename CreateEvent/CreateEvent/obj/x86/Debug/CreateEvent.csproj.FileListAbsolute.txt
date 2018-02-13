@@ -1,0 +1,33 @@
+F:\Engineering Notes\7th semester\WeddingManagemnetSystem\CreateEvent\CreateEvent\bin\Debug\CreateEvent.exe
+F:\Engineering Notes\7th semester\WeddingManagemnetSystem\CreateEvent\CreateEvent\bin\Debug\CreateEvent.pdb
+F:\Engineering Notes\7th semester\WeddingManagemnetSystem\CreateEvent\CreateEvent\obj\x86\Debug\AddMember.baml
+F:\Engineering Notes\7th semester\WeddingManagemnetSystem\CreateEvent\CreateEvent\obj\x86\Debug\Centers.baml
+F:\Engineering Notes\7th semester\WeddingManagemnetSystem\CreateEvent\CreateEvent\obj\x86\Debug\CostCalculation.baml
+F:\Engineering Notes\7th semester\WeddingManagemnetSystem\CreateEvent\CreateEvent\obj\x86\Debug\CreateEventInvoice.baml
+F:\Engineering Notes\7th semester\WeddingManagemnetSystem\CreateEvent\CreateEvent\obj\x86\Debug\CustomCentersInfo.baml
+F:\Engineering Notes\7th semester\WeddingManagemnetSystem\CreateEvent\CreateEvent\obj\x86\Debug\CustomerInfo.baml
+F:\Engineering Notes\7th semester\WeddingManagemnetSystem\CreateEvent\CreateEvent\obj\x86\Debug\Decoration.baml
+F:\Engineering Notes\7th semester\WeddingManagemnetSystem\CreateEvent\CreateEvent\obj\x86\Debug\EventDateTime.baml
+F:\Engineering Notes\7th semester\WeddingManagemnetSystem\CreateEvent\CreateEvent\obj\x86\Debug\LogIn.baml
+F:\Engineering Notes\7th semester\WeddingManagemnetSystem\CreateEvent\CreateEvent\obj\x86\Debug\MainWindow.baml
+F:\Engineering Notes\7th semester\WeddingManagemnetSystem\CreateEvent\CreateEvent\obj\x86\Debug\Photography.baml
+F:\Engineering Notes\7th semester\WeddingManagemnetSystem\CreateEvent\CreateEvent\obj\x86\Debug\AddMember.g.cs
+F:\Engineering Notes\7th semester\WeddingManagemnetSystem\CreateEvent\CreateEvent\obj\x86\Debug\Centers.g.cs
+F:\Engineering Notes\7th semester\WeddingManagemnetSystem\CreateEvent\CreateEvent\obj\x86\Debug\CostCalculation.g.cs
+F:\Engineering Notes\7th semester\WeddingManagemnetSystem\CreateEvent\CreateEvent\obj\x86\Debug\CreateEventInvoice.g.cs
+F:\Engineering Notes\7th semester\WeddingManagemnetSystem\CreateEvent\CreateEvent\obj\x86\Debug\CustomCentersInfo.g.cs
+F:\Engineering Notes\7th semester\WeddingManagemnetSystem\CreateEvent\CreateEvent\obj\x86\Debug\CustomerInfo.g.cs
+F:\Engineering Notes\7th semester\WeddingManagemnetSystem\CreateEvent\CreateEvent\obj\x86\Debug\Decoration.g.cs
+F:\Engineering Notes\7th semester\WeddingManagemnetSystem\CreateEvent\CreateEvent\obj\x86\Debug\EventDateTime.g.cs
+F:\Engineering Notes\7th semester\WeddingManagemnetSystem\CreateEvent\CreateEvent\obj\x86\Debug\LogIn.g.cs
+F:\Engineering Notes\7th semester\WeddingManagemnetSystem\CreateEvent\CreateEvent\obj\x86\Debug\MainWindow.g.cs
+F:\Engineering Notes\7th semester\WeddingManagemnetSystem\CreateEvent\CreateEvent\obj\x86\Debug\Photography.g.cs
+F:\Engineering Notes\7th semester\WeddingManagemnetSystem\CreateEvent\CreateEvent\obj\x86\Debug\App.g.cs
+F:\Engineering Notes\7th semester\WeddingManagemnetSystem\CreateEvent\CreateEvent\obj\x86\Debug\CreateEvent_MarkupCompile.cache
+F:\Engineering Notes\7th semester\WeddingManagemnetSystem\CreateEvent\CreateEvent\obj\x86\Debug\CreateEvent.g.resources
+F:\Engineering Notes\7th semester\WeddingManagemnetSystem\CreateEvent\CreateEvent\obj\x86\Debug\CreateEvent.Properties.Resources.resources
+F:\Engineering Notes\7th semester\WeddingManagemnetSystem\CreateEvent\CreateEvent\obj\x86\Debug\CreateEvent.csproj.GenerateResource.Cache
+F:\Engineering Notes\7th semester\WeddingManagemnetSystem\CreateEvent\CreateEvent\obj\x86\Debug\CreateEvent.exe
+F:\Engineering Notes\7th semester\WeddingManagemnetSystem\CreateEvent\CreateEvent\obj\x86\Debug\CreateEvent.pdb
+F:\Assignment\WeddingManagementSystem\CreateEvent\CreateEvent\obj\x86\Debug\CreateEvent.exe
+F:\Assignment\WeddingManagementSystem\CreateEvent\CreateEvent\obj\x86\Debug\CreateEvent.pdb

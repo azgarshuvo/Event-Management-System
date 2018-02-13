@@ -1,0 +1,35 @@
+﻿<Window x:Class="Package_Wpf.Customer_Info"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Package_Wpf"
+        mc:Ignorable="d"
+     Title="Packages" Height="576" Width="430" Foreground="#FF18567C">
+    <Grid Name="Customer_Info_Grid"  Background="#FF07482F">
+        <Label x:Name="label1" Content="Customer Info" HorizontalAlignment="Left" Height="41" Margin="112,10,0,0" VerticalAlignment="Top" Width="199" Foreground="#FF87C122" FontSize="22" FontWeight="Bold"/>
+        <Separator HorizontalAlignment="Left" Height="0" Margin="0,66,0,0" VerticalAlignment="Top" Width="422"/>
+        <Separator HorizontalAlignment="Left" Height="0" Margin="10,66,0,0" VerticalAlignment="Top" Width="412"/>
+        <Separator HorizontalAlignment="Left" Height="7" Margin="29,51,0,0" VerticalAlignment="Top" Width="364"/>
+        <Label x:Name="label2" Content="Name:" HorizontalAlignment="Left" Height="30" Margin="29,87,0,0" VerticalAlignment="Top" Width="125" Foreground="#FFF5F0F0" FontWeight="Bold" FontSize="14"/>
+        <Label x:Name="label2_Copy" Content="Contact Number:" HorizontalAlignment="Left" Height="30" Margin="29,122,0,0" VerticalAlignment="Top" Width="125" Foreground="#FFF5F0F0" FontWeight="Bold" FontSize="14"/>
+        <Label x:Name="label2_Copy1" Content="Email:" HorizontalAlignment="Left" Height="30" Margin="29,157,0,0" VerticalAlignment="Top" Width="125" Foreground="#FFF5F0F0" FontWeight="Bold" FontSize="14"/>
+        <Label x:Name="label2_Copy2" Content="Address:" HorizontalAlignment="Left" Height="30" Margin="29,192,0,0" VerticalAlignment="Top" Width="125" Foreground="#FFF5F0F0" FontWeight="Bold" FontSize="14"/>
+        <TextBox x:Name="Name_TextBox" HorizontalAlignment="Left" Height="26" Margin="176,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" Background="#FFE8E1E1" />
+        <TextBox x:Name="Contact_Number_TextBox" HorizontalAlignment="Left" Height="26" Margin="176,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" Background="#FFE8E1E1" />
+        <TextBox x:Name="Email_TextBox" HorizontalAlignment="Left" Height="26" Margin="176,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" Background="#FFE8E1E1" />
+        <TextBox x:Name="Address_TextBox" HorizontalAlignment="Left" Height="45" Margin="29,227,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="337" Background="#FFE8E1E1" />
+        <Separator HorizontalAlignment="Left" Height="7" Margin="29,292,0,0" VerticalAlignment="Top" Width="364"/>
+        <Label x:Name="label2_Copy3" Content="Event Date:" HorizontalAlignment="Left" Height="30" Margin="29,316,0,0" VerticalAlignment="Top" Width="125" Foreground="#FFF5F0F0" FontWeight="Bold" FontSize="14"/>
+        <Label x:Name="label2_Copy4" Content="Start Time:" HorizontalAlignment="Left" Height="30" Margin="29,370,0,0" VerticalAlignment="Top" Width="125" Foreground="#FFF5F0F0" FontWeight="Bold" FontSize="14"/>
+        <TextBox x:Name="Event_Time_TextBox" HorizontalAlignment="Left" Height="26" Margin="176,320,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" Background="#FFE8E1E1" />
+        <TextBox x:Name="Start_Time_TextBox" HorizontalAlignment="Left" Height="26" Margin="176,370,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" Background="#FFE8E1E1" />
+        <Separator HorizontalAlignment="Left" Height="7" Margin="29,420,0,0" VerticalAlignment="Top" Width="364"/>
+        <Label x:Name="label2_Copy5" Content="Advance Pay:" HorizontalAlignment="Left" Height="30" Margin="29,444,0,0" VerticalAlignment="Top" Width="125" Foreground="#FFF5F0F0" FontWeight="Bold" FontSize="14" RenderTransformOrigin="0.496,1.933"/>
+        <TextBox x:Name="Advance_Pay_TextBox" HorizontalAlignment="Left" Height="26" Margin="176,444,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" Background="#FFE8E1E1" />
+        <Separator HorizontalAlignment="Left" Height="7" Margin="29,492,0,0" VerticalAlignment="Top" Width="364"/>
+        <Button x:Name="Confirm_Button" Content="CONFIRM" HorizontalAlignment="Left" Height="28" Margin="253,508,0,0" VerticalAlignment="Top" Width="83" Background="#FFCDC6C6" FontSize="14" FontWeight="Bold" Foreground="#FF58811D"/>
+        <Button x:Name="Cancel_Button" Content="Cancel" HorizontalAlignment="Left" Height="28" Margin="112,508,0,0" VerticalAlignment="Top" Width="94" Background="#FFD3CCCC" Foreground="#FFF31C1C" FontWeight="Bold" FontSize="14"/>
+
+    </Grid>
+</Window>

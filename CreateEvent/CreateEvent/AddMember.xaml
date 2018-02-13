@@ -1,0 +1,28 @@
+﻿<Window x:Class="CreateEvent.AddMember"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Add Member" Height="576" Width="430">
+    <Grid Name="addMemberGrid" Background="#FF07482F">
+        <TextBlock FontFamily="Times New Roman" FontSize="30" FontStyle="Normal" FontWeight="Bold" Foreground="#FF56ABBA" Height="33" HorizontalAlignment="Left" Margin="104,12,0,0" Name="textBlock1" Text="Add Member" VerticalAlignment="Top" Width="205" />
+        <Border Background="#FF454583" BorderBrush="Silver" BorderThickness="1" Height="4" HorizontalAlignment="Left" Margin="31,51,0,0" Name="border1" VerticalAlignment="Top" Width="348"></Border>
+        <TextBlock FontFamily="Times New Roman" FontSize="16" Foreground="#FF92F2A9" Height="23" HorizontalAlignment="Left" Margin="31,73,0,0" Name="photographyTextBlock" Text="Name                             :" VerticalAlignment="Top" />
+        <TextBlock FontFamily="Times New Roman" FontSize="16" Foreground="#FF92F2A9" Height="23" HorizontalAlignment="Left" Margin="31,233,0,0" Name="textBlock2" Text="Contact No                    :" VerticalAlignment="Top" />
+        <TextBlock FontFamily="Times New Roman" FontSize="16" Foreground="#FF92F2A9" Height="23" HorizontalAlignment="Left" Margin="29,272,0,0" Name="textBlock3" Text="Email                             :" VerticalAlignment="Top" />
+        <TextBlock FontFamily="Times New Roman" FontSize="16" Foreground="#FF92F2A9" Height="23" HorizontalAlignment="Left" Margin="29,309,0,0" Name="textBlock4" Text="Address                          :" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="222,73,0,0" Name="nameTextBox" VerticalAlignment="Top" Width="157" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="222,233,0,0" Name="contactNoTextBox" VerticalAlignment="Top" Width="157" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="222,273,0,0" Name="emailTextBox" VerticalAlignment="Top" Width="157" />
+        <TextBox Height="66" HorizontalAlignment="Left" Margin="29,347,0,0" Name="addressTextBox" VerticalAlignment="Top" Width="350" />
+        <TextBlock FontFamily="Times New Roman" FontSize="16" Foreground="#FF92F2A9" Height="23" HorizontalAlignment="Left" Margin="31,114,0,0" Name="textBlock5" Text="Position                         :" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="222,115,0,0" Name="positionTextBox" VerticalAlignment="Top" Width="157" />
+        <TextBlock FontFamily="Times New Roman" FontSize="16" Foreground="#FF92F2A9" Height="23" HorizontalAlignment="Left" Margin="29,156,0,0" Name="textBlock6" Text="Date Of Birth                 :" VerticalAlignment="Top" />
+        <TextBlock FontFamily="Times New Roman" FontSize="16" Foreground="#FF92F2A9" Height="23" HorizontalAlignment="Left" Margin="30,429,0,0" Name="textBlock7" Text="Salary                            :" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="222,429,0,0" Name="salaryTextBox" VerticalAlignment="Top" Width="157" />
+        <Border Background="#FF454583" BorderBrush="Silver" BorderThickness="1" Height="4" Name="border2" Margin="31,458,29,75" />
+        <Button Background="#FFE8E833" Content="Add Member" FontFamily="Times New Roman" FontWeight="Bold" Height="23" HorizontalAlignment="Left" Margin="29,483,0,0" Name="addMemberButton" VerticalAlignment="Top" Width="157" />
+        <Button Background="#FF33CCE8" Content="Cancel" FontFamily="Times New Roman" FontWeight="Bold" Height="23" HorizontalAlignment="Left" Margin="222,483,0,0" Name="cancelButton" VerticalAlignment="Top" Width="157" />
+        <TextBlock FontFamily="Times New Roman" FontSize="16" Foreground="#FF92F2A9" Height="23" HorizontalAlignment="Left" Margin="31,193,0,0" Name="textBlock8" Text="Join Date                       :" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="222,156,0,0" Name="dateOfBirthTextBox" VerticalAlignment="Top" Width="157" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="222,193,0,0" Name="joinDateTextBox" VerticalAlignment="Top" Width="157" />
+    </Grid>
+</Window>

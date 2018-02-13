@@ -1,0 +1,6 @@
+C:\Users\Tanmoy\Desktop\WeddingManagementSystem\CenterJobs\bin\Debug\CenterJobs.dll.config
+C:\Users\Tanmoy\Desktop\WeddingManagementSystem\CenterJobs\bin\Debug\CenterJobs.dll
+C:\Users\Tanmoy\Desktop\WeddingManagementSystem\CenterJobs\bin\Debug\CenterJobs.pdb
+C:\Users\Tanmoy\Desktop\WeddingManagementSystem\CenterJobs\obj\Debug\CenterJobs.csprojResolveAssemblyReference.cache
+C:\Users\Tanmoy\Desktop\WeddingManagementSystem\CenterJobs\obj\Debug\CenterJobs.dll
+C:\Users\Tanmoy\Desktop\WeddingManagementSystem\CenterJobs\obj\Debug\CenterJobs.pdb

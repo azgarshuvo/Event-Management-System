@@ -1,0 +1,25 @@
+﻿<Window x:Class="WeddingManagementSystem.CustomerInfo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="CustomerInfo" Height="576" Width="430">
+    <Grid Name="customerInfoGrid" Background="#FF07482F">
+        <TextBlock FontFamily="Times New Roman" FontSize="30" FontStyle="Normal" FontWeight="Bold" Foreground="#FF56ABBA" Height="33" HorizontalAlignment="Left" Margin="101,12,0,0" Name="textBlock1" Text="Customer Info" VerticalAlignment="Top" Width="241" />
+        <Border Background="#FF454583" BorderBrush="Silver" BorderThickness="1" Height="4" HorizontalAlignment="Left" Margin="28,51,0,0" Name="border1" VerticalAlignment="Top" Width="351"></Border>
+        <TextBlock FontFamily="Times New Roman" FontSize="16" Foreground="#FF92F2A9" Height="23" HorizontalAlignment="Left" Margin="28,73,0,0" Name="photographyTextBlock" Text="Name                             :" VerticalAlignment="Top" />
+        <TextBlock FontFamily="Times New Roman" FontSize="16" Foreground="#FF92F2A9" Height="23" HorizontalAlignment="Left" Margin="28,110,0,0" Name="textBlock2" Text="Contact No                    :" VerticalAlignment="Top" />
+        <TextBlock FontFamily="Times New Roman" FontSize="16" Foreground="#FF92F2A9" Height="23" HorizontalAlignment="Left" Margin="28,150,0,0" Name="textBlock3" Text="Email                             :" VerticalAlignment="Top" />
+        <TextBlock FontFamily="Times New Roman" FontSize="16" Foreground="#FF92F2A9" Height="23" HorizontalAlignment="Left" Margin="28,189,0,0" Name="textBlock4" Text="Address                         :" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="192,73,0,0" Name="nameTextBox" VerticalAlignment="Top" Width="187" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="192,110,0,0" Name="contactNoTextBox" VerticalAlignment="Top" Width="187" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="192,150,0,0" Name="emailTextBox" VerticalAlignment="Top" Width="187" />
+        <TextBox Height="66" HorizontalAlignment="Left" Margin="28,218,0,0" Name="addressTextBox" VerticalAlignment="Top" Width="351" />
+        <Border Background="#FF454583" BorderBrush="Silver" BorderThickness="1" Height="4" Name="border2" Margin="28,308,35,234" />
+        <TextBlock FontFamily="Times New Roman" FontSize="16" Foreground="#FF92F2A9" Height="23" HorizontalAlignment="Left" Margin="36,334,0,0" Name="textBlock5" Text="Event ID                      :" VerticalAlignment="Top" Width="152" />
+        <TextBlock Foreground="White" Height="23" HorizontalAlignment="Left" Margin="193,334,0,0" Name="eventIdTextBox" VerticalAlignment="Top" Width="187" />
+        <TextBlock FontFamily="Times New Roman" FontSize="16" Foreground="#FF92F2A9" Height="23" HorizontalAlignment="Left" Margin="29,372,0,0" Name="textBlock6" Text=" Advance Pay                 :" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="194,372,0,0" Name="advancePayTextBox" VerticalAlignment="Top" Width="185" />
+        <Border Background="#FF454583" BorderBrush="Silver" BorderThickness="1" Height="4" Name="border3" Margin="28,420,35,122" />
+        <Button Background="Brown" Foreground="Yellow" Content="Cancel" FontFamily="Times New Roman" FontWeight="Bold" Height="23" HorizontalAlignment="Left" Margin="29,465,0,0" Name="backButton" VerticalAlignment="Top" Width="157" Click="backButton_Click" />
+        <Button Background="Green" Foreground="Yellow" Content="Confirm" FontFamily="Times New Roman" FontWeight="Bold" Height="23" HorizontalAlignment="Left" Margin="222,465,0,0" Name="confirmButton" VerticalAlignment="Top" Width="157" Click="confirmButton_Click" />
+    </Grid>
+</Window>

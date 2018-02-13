@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FA2171D6-2026-494B-A188-9871FF2863DB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WeddingManagementSystem</RootNamespace>
+    <AssemblyName>WeddingManagementSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="AddCenter.xaml.cs">
+      <DependentUpon>AddCenter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AddDecorationForm.xaml.cs">
+      <DependentUpon>AddDecorationForm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewCenter.xaml.cs">
+      <DependentUpon>AddNewCenter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewMember.xaml.cs">
+      <DependentUpon>AddNewMember.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Centers.xaml.cs">
+      <DependentUpon>Centers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeMyPassword.xaml.cs">
+      <DependentUpon>ChangeMyPassword.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CreateANewPackage.xaml.cs">
+      <DependentUpon>CreateANewPackage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CreateEventInvoice.xaml.cs">
+      <DependentUpon>CreateEventInvoice.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CreateNewEvent.xaml.cs">
+      <DependentUpon>CreateNewEvent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerInfo.xaml.cs">
+      <DependentUpon>CustomerInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomEventCenter.xaml.cs">
+      <DependentUpon>CustomEventCenter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EventCostCalculation.xaml.cs">
+      <DependentUpon>EventCostCalculation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EventDateTime.xaml.cs">
+      <DependentUpon>EventDateTime.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EventDecoration.xaml.cs">
+      <DependentUpon>EventDecoration.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EventPhotography.xaml.cs">
+      <DependentUpon>EventPhotography.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FullPayment.xaml.cs">
+      <DependentUpon>FullPayment.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FullPaymentInvoice.xaml.cs">
+      <DependentUpon>FullPaymentInvoice.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LoginPage.xaml.cs">
+      <DependentUpon>LoginPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PackageCostCalculation.xaml.cs">
+      <DependentUpon>PackageCostCalculation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PackageCustomerInfo.xaml.cs">
+      <DependentUpon>PackageCustomerInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PackageDecoration.xaml.cs">
+      <DependentUpon>PackageDecoration.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PackageDetails.xaml.cs">
+      <DependentUpon>PackageDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PackageInvoice.xaml.cs">
+      <DependentUpon>PackageInvoice.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PackagePhotographer.xaml.cs">
+      <DependentUpon>PackagePhotographer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SetSecurityQuestion.xaml.cs">
+      <DependentUpon>SetSecurityQuestion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SuccessfullyCreatedPackage.xaml.cs">
+      <DependentUpon>SuccessfullyCreatedPackage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateMember.xaml.cs">
+      <DependentUpon>UpdateMember.xaml</DependentUpon>
+    </Compile>
+    <Page Include="AddCenter.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddDecorationForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddNewCenter.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddNewMember.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Centers.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ChangeMyPassword.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CreateANewPackage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CreateEventInvoice.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CreateNewEvent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CustomerInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CustomEventCenter.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EventCostCalculation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EventDateTime.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EventDecoration.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EventPhotography.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FullPayment.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FullPaymentInvoice.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LoginPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="PackageCostCalculation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PackageCustomerInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PackageDecoration.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PackageDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PackageInvoice.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PackagePhotographer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SetSecurityQuestion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SuccessfullyCreatedPackage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UpdateMember.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CenterJobs\CenterJobs.csproj">
+      <Project>{5947e70e-7eae-48fb-a03b-991f5a1da068}</Project>
+      <Name>CenterJobs</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DecorationList\Decoration.csproj">
+      <Project>{cf585b01-c384-469d-b758-029414bcbb39}</Project>
+      <Name>Decoration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EventList\EventList.csproj">
+      <Project>{f3f730ac-7bd0-4667-9b94-9af5c0668c84}</Project>
+      <Name>EventList</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MemberList\MemberList.csproj">
+      <Project>{658a20f7-5b4d-4290-8867-77803f9dd4aa}</Project>
+      <Name>MemberList</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Memberservices\Memberservices.csproj">
+      <Project>{b5442064-c605-4c43-9540-e57a641fec4c}</Project>
+      <Name>Memberservices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Packages\Packages.csproj">
+      <Project>{58ebf485-b1b5-4617-a51b-f0ca2a18a531}</Project>
+      <Name>Packages</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
